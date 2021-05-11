@@ -1,0 +1,34 @@
+.module {
+  max-width: 250px;
+  min-width: 234px;
+  position: relative;
+  color: white;
+  padding: 5px 0 0;
+  text-align: center;
+}
+.module-border {
+  position: absolute;
+  overflow: visible;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  fill: none;
+  stroke: url(#silvergrad);
+  stroke-width: 4px;
+}
+.module-text {
+  background-image: linear-gradient(to top, #ffffff, #aaaaaa),
+    linear-gradient(to bottom, #fefefe, #fefefe);
+  background-clip: text;
+  font-family: "Teko";
+  font-size: 36px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+}
+#silvergrad stop:nth-child(1) {
+  stop-color: #ffffff;
+}
+#silvergrad stop:nth-child(2) {
+  stop-color: #b4b4b4;
+}

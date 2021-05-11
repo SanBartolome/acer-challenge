@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  text-align: center;
+  a {
+    font-weight: bold;
+  }
+  app-brands {
+    margin: 28px 0 84px;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 41px;
+    .hashtag {
+      margin: 0 10px;
+    }
+    .separator {
+      margin: 0 80px;
+    }
+  }
+}

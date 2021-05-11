@@ -1,0 +1,60 @@
+.first-section {
+  position: relative;
+  height: 1100px;
+  overflow: hidden;
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -1;
+  }
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    app-brands {
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 2%;
+      width: 100%;
+    }
+    .content {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 1%;
+      .logo {
+        max-width: 1200px;
+        width: 60%;
+      }
+      .register-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &__title {
+          font-size: 3.5em;
+          margin: 0 0 19px;
+        }
+        &__description {
+          font-size: 1.8em;
+          margin-top: 30px;
+        }
+      }
+      @media only screen and (max-width: 1186px) {
+        .logo {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .image {
+    max-height: 45px;
+    margin: 5px 45px;
+  }
+}

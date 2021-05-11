@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Foco";
+  src: url("/assets/fonts/Foco_Lt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Foco";
+  src: url("/assets/fonts/Foco_Rg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Foco";
+  src: url("/assets/fonts/Foco_Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("/assets/fonts/Teko_Lt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("/assets/fonts/Teko_Rg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("/assets/fonts/Teko_Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Foco";
+  margin: 0;
+}

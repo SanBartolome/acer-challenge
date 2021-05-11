@@ -1,0 +1,23 @@
+.device-feature {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 154px;
+  justify-content: center;
+  padding: 0 10px;
+  width: 134px;
+  .image {
+    height: 54px;
+    object-fit: contain;
+  }
+  .description {
+    align-items: center;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    padding-top: 13px;
+    margin-top: 13px;
+  }
+}

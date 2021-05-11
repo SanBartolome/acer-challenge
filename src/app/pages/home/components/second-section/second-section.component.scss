@@ -1,0 +1,65 @@
+.second-section {
+  background-image: url("/assets/media/bg-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  height: 1100px;
+  .image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+  }
+  .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0 7%;
+    width: 100%;
+    z-index: 1;
+    .content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 0 1%;
+      .title {
+        background-image: linear-gradient(to top, #ffffff, #aaaaaa),
+          linear-gradient(to bottom, #fefefe, #fefefe);
+        background-clip: text;
+        font-size: 3.5em;
+        font-weight: bold;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+      }
+      .subtitle {
+        font-size: 1.5em;
+        margin-bottom: 37px;
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 34px;
+        app-device-feature {
+          margin: 10px 10px 0;
+        }
+      }
+      .processors-logos {
+        object-fit: contain;
+        margin-top: 10px;
+      }
+    }
+  }
+}
