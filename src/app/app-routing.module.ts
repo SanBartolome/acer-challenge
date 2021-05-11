@@ -18,14 +18,9 @@ const routes: Routes = [
       import('./pages/legal/legal.module').then((m) => m.LegalModule),
   },
   {
-    path: 'inicio',
+    path: '',
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomeModule),
-  },
-  {
-    path: '',
-    pathMatch: 'full',
-    redirectTo: 'inicio',
   },
 ];
 

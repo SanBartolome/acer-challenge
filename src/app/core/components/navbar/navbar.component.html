@@ -3,19 +3,35 @@
     <span><img src="/assets/icons/more-vertical.svg" /></span>
   </div>
   <div class="navbar--expanded">
-    <div class="option" routerLink="/inicio" routerLinkActive="active">
+    <div
+      class="option"
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <span class="hover">INICIO</span>
     </div>
-    <div class="option" routerLink="/legal" routerLinkActive="active">
+    <div
+      class="option"
+      routerLink="/legal"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <span class="hover">REGLAMENTO</span>
     </div>
-    <div class="option" routerLink="/registro" routerLinkActive="active">
+    <div
+      class="option"
+      routerLink="/registro"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
       <span class="hover">INSCRIPCIONES</span>
     </div>
     <div
       class="option option--flex"
       routerLink="/envivo"
       routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
     >
       <div class="live-point"></div>
       <span class="hover">EN VIVO</span>
