@@ -15,8 +15,43 @@
 
 @font-face {
   font-family: "Foco";
+  src: url("/assets/fonts/Foco_SbdIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Foco";
   src: url("/assets/fonts/Foco_Bd.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Predator";
+  src: url("/assets/fonts/Predator_Tn.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Predator";
+  src: url("/assets/fonts/Predator_Rg.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Predator";
+  src: url("/assets/fonts/Predator_Bd.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Predator";
+  src: url("/assets/fonts/Predator_Bk.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
 }
 

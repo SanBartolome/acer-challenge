@@ -8,6 +8,6 @@ import { AppSharedModule } from 'src/app/shared/shared.module';
 @NgModule({
   imports: [RouterModule, AppSharedModule],
   declarations: [ShellComponent, FooterComponent, NavbarComponent],
-  exports: [ShellComponent],
+  exports: [ShellComponent, FooterComponent],
 })
 export class AppCoreComponentsModule {}

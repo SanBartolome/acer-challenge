@@ -4,6 +4,7 @@ import { FirstSectionComponent } from './first-section/first-section.component';
 import { AppSharedModule } from 'src/app/shared/shared.module';
 import { SecondSectionComponent } from './second-section/second-section.component';
 import { ThirdSectionComponent } from './third-section/third-section.component';
+import { CoreModule } from 'src/app/core/core.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { ThirdSectionComponent } from './third-section/third-section.component';
     SecondSectionComponent,
     ThirdSectionComponent,
   ],
-  imports: [CommonModule, AppSharedModule],
+  imports: [CommonModule, AppSharedModule, CoreModule],
   exports: [
     FirstSectionComponent,
     SecondSectionComponent,
