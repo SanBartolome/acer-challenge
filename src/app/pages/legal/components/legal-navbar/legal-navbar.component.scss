@@ -1,0 +1,23 @@
+.legal-navbar {
+  align-items: center;
+  background-color: #15161c;
+  display: flex;
+  height: 3em;
+  justify-content: center;
+  .option {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    min-width: 20%;
+    label {
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  background-color: #25272e;
+}

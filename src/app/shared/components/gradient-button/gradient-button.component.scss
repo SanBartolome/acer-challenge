@@ -1,11 +1,11 @@
 .module {
   background: rgba(0, 0, 0, 0.5);
-  max-width: 250px;
-  min-width: 234px;
+  min-width: 180px;
   position: relative;
   color: white;
   padding: 5px 0 0;
   text-align: center;
+  width: 20vw;
 }
 .module-border {
   position: absolute;
@@ -23,7 +23,7 @@
     linear-gradient(to bottom, #fefefe, #fefefe);
   background-clip: text;
   font-family: "Teko";
-  font-size: 36px;
+  font-size: 4vh;
   font-weight: 300;
   -webkit-text-fill-color: transparent;
 }

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   font-size: 1.4em;
+  padding: 28px;
   text-align: center;
   a {
     color: white;
@@ -18,6 +19,10 @@
     padding: 0 62px;
     margin: 0 62px;
     width: fit-content;
+    &--percentage {
+      padding: 0 6%;
+      margin: 0 6%;
+    }
   }
   .content {
     display: flex;
@@ -27,8 +32,11 @@
     .hashtag {
       margin: 0 10px;
     }
-    .separator {
-      margin: 0 80px;
-    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 2.9vw;
   }
 }

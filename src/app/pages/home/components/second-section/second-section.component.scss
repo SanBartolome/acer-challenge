@@ -5,31 +5,33 @@
   background-repeat: no-repeat;
   display: flex;
   position: relative;
-  height: 1100px;
   .image {
     position: absolute;
     left: 0;
     right: 0;
-    top: 5%;
+    top: 15%;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
     max-height: 90%;
-    height: auto;
-    width: auto;
+    min-height: 240px;
+    object-fit: cover;
   }
   .overlay {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5% 0 7%;
+    padding: 89px 0 119px;
     width: 100%;
     z-index: 1;
     .content {
       align-items: center;
       display: flex;
       flex-direction: column;
-      padding: 0 1%;
+      padding: 0 28px;
+      app-gradient-button {
+        margin: 1% 0 38%;
+      }
       .title {
         background-image: linear-gradient(to top, #ffffff, #aaaaaa),
           linear-gradient(to bottom, #fefefe, #fefefe);
@@ -41,7 +43,14 @@
       }
       .subtitle {
         font-size: 1.5em;
-        margin-bottom: 37px;
+      }
+      @media only screen and (max-width: 768px) {
+        .title {
+          font-size: 7.3vw;
+        }
+        .subtitle {
+          font-size: 3.1vw;
+        }
       }
     }
     .bottom {
@@ -51,14 +60,17 @@
       .features {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin: 0 34px;
         app-device-feature {
-          margin: 10px 10px 0;
+          margin: 20px 10px;
         }
       }
       .processors-logos {
+        height: 13.7vh;
+        min-height: 100px;
         object-fit: contain;
-        margin-top: 10px;
+        margin: auto 0;
       }
     }
   }

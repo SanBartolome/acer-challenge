@@ -3,7 +3,8 @@
   flex-wrap: wrap;
   justify-content: center;
   .image {
-    max-height: 45px;
+    height: 3.74vh;
+    min-height: 28px;
     margin: 5px 45px;
   }
 }
