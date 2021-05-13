@@ -20,7 +20,7 @@ export class LegalNavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  changeCurrentTab(tabNumber: number) {
+  changeCurrentTab(tabNumber: number): void {
     this.currentTab.emit(tabNumber);
     for (let i = 0; i < 3; i++) {
       if (i === tabNumber) {
