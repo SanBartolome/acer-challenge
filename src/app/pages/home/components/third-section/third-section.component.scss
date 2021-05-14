@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  min-height: 850px;
+  min-height: 1000px;
   padding: 40px 28px 0;
   position: relative;
   text-align: center;
@@ -19,24 +19,24 @@
   .subtitle {
     font-family: "Radiance";
     font-size: 1.5em;
-    margin: 2% 0 auto;
+    margin: 2% 0 0;
   }
   app-silver-gradient-button {
     position: absolute;
-    top: 42%;
+    top: 43%;
   }
   app-footer {
     margin-top: auto;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     .title {
-      font-size: 7.3vw;
+      font-size: 8.3vw;
     }
     .subtitle {
-      font-size: 3.1vw;
+      font-size: 5.1vw;
     }
     app-silver-gradient-button {
-      top: 43%;
+      top: 44%;
     }
   }
 }

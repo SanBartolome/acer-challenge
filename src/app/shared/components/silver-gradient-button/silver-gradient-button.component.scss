@@ -1,10 +1,11 @@
 .module {
   background: rgba(0, 0, 0, 0.5);
-  max-width: 305px;
-  min-width: 180px;
+  cursor: pointer;
+  max-width: 235px;
+  min-width: 205px;
   position: relative;
   color: white;
-  padding: 8px 0 3px;
+  padding: 3px 0;
   text-align: center;
   width: 20vw;
 }
@@ -24,7 +25,7 @@
     linear-gradient(to bottom, #fefefe, #fefefe);
   background-clip: text;
   font-family: "Radiance";
-  font-size: 4vh;
+  font-size: 3.5vh;
   font-weight: bold;
   -webkit-text-fill-color: transparent;
 }
