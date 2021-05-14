@@ -7,21 +7,21 @@
   position: relative;
   .image {
     position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
-    top: 15%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-    max-height: 90%;
+    top: 0;
+    margin: 45px auto auto;
     min-height: 240px;
+    max-width: 1400px;
     object-fit: cover;
+    width: 90vw;
   }
   .overlay {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 89px 0 119px;
+    padding: 45px 0 60px;
     width: 100%;
     z-index: 1;
     .content {
@@ -30,27 +30,10 @@
       flex-direction: column;
       padding: 0 28px;
       app-gradient-button {
-        margin: 1% 0 38%;
+        margin: 1% 0 24%;
       }
-      .title {
-        background-image: linear-gradient(to top, #ffffff, #aaaaaa),
-          linear-gradient(to bottom, #fefefe, #fefefe);
-        background-clip: text;
-        font-size: 3.5em;
-        font-weight: bold;
-        -webkit-text-fill-color: transparent;
-        margin: 0;
-      }
-      .subtitle {
-        font-size: 1.5em;
-      }
-      @media only screen and (max-width: 768px) {
-        .title {
-          font-size: 7.3vw;
-        }
-        .subtitle {
-          font-size: 3.1vw;
-        }
+      .logo-nitro {
+        height: 10vh;
       }
     }
     .bottom {
@@ -63,14 +46,26 @@
         justify-content: center;
         margin: 0 34px;
         app-device-feature {
-          margin: 20px 10px;
+          margin: 10px;
         }
       }
       .processors-logos {
-        height: 13.7vh;
-        min-height: 100px;
+        height: 13vh;
+        max-height: 128px;
         object-fit: contain;
         margin: auto 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .image {
+      margin-top: 37%;
+    }
+    .overlay {
+      .content {
+        app-gradient-button {
+          margin-bottom: 55%;
+        }
       }
     }
   }

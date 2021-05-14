@@ -1,6 +1,41 @@
 <div class="navbar">
   <div class="navbar--collapsed">
-    <span><img src="/assets/icons/more-vertical.svg" /></span>
+    <app-hamburguer-menu (click)="dropDownClicked()"></app-hamburguer-menu>
+    <div [ngClass]="ddStatus" ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <div
+        class="option"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="hover">INICIO</span>
+      </div>
+      <div
+        class="option"
+        routerLink="/legal"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="hover">REGLAMENTO</span>
+      </div>
+      <div
+        class="option"
+        routerLink="/registro"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="hover">INSCRIPCIONES</span>
+      </div>
+      <div
+        class="option option--flex"
+        routerLink="/envivo"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="live-point"></div>
+        <span class="hover">EN VIVO</span>
+      </div>
+    </div>
   </div>
   <div class="navbar--expanded">
     <div

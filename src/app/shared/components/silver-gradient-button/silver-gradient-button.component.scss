@@ -1,9 +1,10 @@
 .module {
   background: rgba(0, 0, 0, 0.5);
+  max-width: 305px;
   min-width: 180px;
   position: relative;
   color: white;
-  padding: 5px 0 0;
+  padding: 8px 0 3px;
   text-align: center;
   width: 20vw;
 }
@@ -22,7 +23,7 @@
   background-image: linear-gradient(to top, #ffffff, #aaaaaa),
     linear-gradient(to bottom, #fefefe, #fefefe);
   background-clip: text;
-  font-family: "Teko";
+  font-family: "Radiance";
   font-size: 4vh;
   font-weight: bold;
   -webkit-text-fill-color: transparent;

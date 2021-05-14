@@ -11,7 +11,7 @@
     text-decoration: none;
   }
   app-brands {
-    margin: 28px 0 84px;
+    margin: 28px 0 10%;
   }
   .horizontal-border {
     border-left: 2px solid white;
@@ -19,24 +19,32 @@
     padding: 0 62px;
     margin: 0 62px;
     width: fit-content;
-    &--percentage {
-      padding: 0 6%;
-      margin: 0 6%;
-    }
   }
-  .content {
+  .navegation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 41px;
-    .hashtag {
+  }
+  .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 41px;
+    &__item {
       margin: 0 10px;
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 730px) {
   .footer {
-    font-size: 2.9vw;
+    font-size: 3.9vw;
+    .horizontal-border {
+      border: 0;
+    }
+    .navegation {
+      flex-direction: column;
+    }
   }
 }

@@ -3,11 +3,13 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 127px;
   justify-content: center;
   padding: 14px 10px;
-  width: 134px;
+  width: 135px;
   .image {
-    height: 54px;
+    height: 5vh;
+    max-height: 54px;
     object-fit: contain;
   }
   .description {
@@ -18,5 +20,12 @@
     font-size: 1.3em;
     padding-top: 13px;
     margin-top: 13px;
+  }
+  @media only screen and (max-width: 730px) {
+    height: 13.5vh;
+    width: 17.5vw;
+    .description {
+      font-size: 3.7vw;
+    }
   }
 }

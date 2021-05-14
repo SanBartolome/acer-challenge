@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-shell',
@@ -9,14 +10,13 @@ import { filter } from 'rxjs/operators';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShellComponent implements OnInit {
-  isCurrentRouteNotHome: Boolean;
+  isCurrentRouteNotHome: Observable<boolean>;
 
   constructor(private router: Router) {
-    this.router.events
-      .pipe(filter((event: NavigationEnd) => event instanceof NavigationEnd))
-      .subscribe((event) => {
-        this.isCurrentRouteNotHome = event.url !== '/';
-      });
+    this.isCurrentRouteNotHome = this.router.events.pipe(
+      filter((event: NavigationEnd) => event instanceof NavigationEnd),
+      map((event) => event.url !== '/')
+    );
   }
 
   ngOnInit(): void {}
