@@ -10,12 +10,12 @@ import { filter, map } from 'rxjs/operators';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShellComponent implements OnInit {
-  isCurrentRouteNotHome: Observable<boolean>;
+  currentRoute$: Observable<string>;
 
   constructor(private router: Router) {
-    this.isCurrentRouteNotHome = this.router.events.pipe(
+    this.currentRoute$ = this.router.events.pipe(
       filter((event: NavigationEnd) => event instanceof NavigationEnd),
-      map((event) => event.url !== '/')
+      map((event) => event.url)
     );
   }
 

@@ -13,7 +13,7 @@ import {
 })
 export class SilverGradientButtonComponent implements OnInit {
   @Input() text = '';
-  @Input() routerLink = '';
+  @Input() routerLink;
 
   constructor() {}
 

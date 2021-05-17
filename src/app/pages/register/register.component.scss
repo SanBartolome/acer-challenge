@@ -1,6 +1,64 @@
 .register {
-  align-items: center;
+  background-image: url("/assets/media/bg-registro.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  position: relative;
+  app-navbar {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .body {
+    color: #fefefe;
+    font-family: "Radiance";
+    min-height: 80vh;
+    margin: 8.5em 0 auto;
+    padding: 0 28px;
+    .title {
+      margin-bottom: 5%;
+      p {
+        font-weight: bold;
+        font-size: 1vw;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    .successful-message {
+      margin-top: 20vh;
+      text-align: center;
+      img {
+        height: 13vh;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 4vw;
+        margin-bottom: 0;
+      }
+      p {
+        font-weight: bold;
+        font-size: 2vw;
+        margin: 0;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 70vh;
+      .title {
+        p {
+          font-size: 2vh;
+        }
+      }
+      .successful-message {
+        h1 {
+          font-size: 4vh;
+        }
+        p {
+          font-size: 2vh;
+        }
+      }
+    }
+  }
 }

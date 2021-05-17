@@ -1,5 +1,5 @@
 <div>
-  <app-navbar *ngIf="isCurrentRouteNotHome | async"></app-navbar>
+  <app-navbar *ngIf="(currentRoute$ | async) === '/legal'"></app-navbar>
   <ng-content></ng-content>
 </div>
-<app-footer *ngIf="isCurrentRouteNotHome | async"></app-footer>
+<app-footer *ngIf="(currentRoute$ | async) === '/legal'"></app-footer>

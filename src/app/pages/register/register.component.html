@@ -1,16 +1,85 @@
-<!-- <div class="register">
-  <div *ngIf="!!(loading | async) as load">
-    {{ load }}
+<div class="register">
+  <app-navbar></app-navbar>
+  <div class="body">
+    <ng-container *ngIf="isLoading$ | async; else contentShow">
+      <div clas="title"><p>Cargando...</p></div>
+    </ng-container>
   </div>
-  <form [formGroup]="registerFG">
-    <input formControlName="teamName" />
-    <input formControlName="firstMember" />
-    <input formControlName="secondMember" />
-    <input formControlName="thirdMember" />
-    <input formControlName="fourthMember" />
-    <input formControlName="fifthMember" />
-    <input formControlName="email" />
-    <input formControlName="cellphone" />
-  </form>
-  <button (click)="sendEmail()">REGISTRARSE</button>
-</div> -->
+  <app-footer></app-footer>
+</div>
+<ng-template #contentShow>
+  <ng-container *ngIf="isFinished$ | async; else formShow">
+    <div class="title">
+      <p>
+        HEMOS RECIBIDO CORRECTAMENTE SU INFORMACIÓN, POR FAVOR CUALQUIER DUDA
+        PONERSE EN CONTACTO A TRAVÉS DE DISCORD.
+      </p>
+    </div>
+    <div class="successful-message">
+      <img class="image" src="/assets/icons/check.png" />
+      <h1>REGISTRO COMPLETO CORRECTAMENTE</h1>
+      <p>¡BIENVENIDO AL #ACERCHALLENGEDOTAWARS!</p>
+    </div>
+  </ng-container>
+</ng-template>
+<ng-template #formShow>
+  <div class="title">
+    <p>
+      LLENA CORRECTAMENTE LOS ESPACIOS PARA CADA JUGADOR (MÁXIMO DOS SUPLENTES
+      POR EQUIPO A REGISTRAR)
+    </p>
+    <p>
+      TODOS LOS EQUIPOS TENDRÁN UN CAPITÁN, EL CUAL SIEMPRE ESTARÁ EN CONSTANTE
+      COMUNICACÓN CON EL STAFF Y ORGANIZACIÓN DEL TORNEO.
+    </p>
+  </div>
+  <ng-container *ngIf="stepNumber$ | async as step">
+    <ng-container [ngSwitch]="step">
+      <app-multi-step-form
+        *ngSwitchCase="1"
+        title="CAPITÁN"
+        [stepNumber]="1"
+        (updatedStepNumber)="updateStepNumber($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="2"
+        title="MIEMBRO 2"
+        [stepNumber]="2"
+        (updatedStepNumber)="updateStepNumber($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="3"
+        title="MIEMBRO 3"
+        [stepNumber]="3"
+        (updatedStepNumber)="updateStepNumber($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="4"
+        title="MIEMBRO 4"
+        [stepNumber]="4"
+        (updatedStepNumber)="updateStepNumber($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="5"
+        title="MIEMBRO 5"
+        [stepNumber]="5"
+        (updatedStepNumber)="updateStepNumber($event)"
+        (registerFinished)="sendEmail($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="6"
+        title="SUPLENTE 1"
+        [stepNumber]="6"
+        (updatedStepNumber)="updateStepNumber($event)"
+        (registerFinished)="sendEmail($event)"
+      ></app-multi-step-form>
+      <app-multi-step-form
+        *ngSwitchCase="7"
+        title="SUPLENTE 2"
+        [stepNumber]="7"
+        (updatedStepNumber)="updateStepNumber($event)"
+        (registerFinished)="sendEmail($event)"
+      ></app-multi-step-form>
+    </ng-container>
+  </ng-container>
+</ng-template>

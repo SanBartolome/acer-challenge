@@ -1,0 +1,84 @@
+.live {
+  background-image: url("/assets/media/bg-en-vivo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  app-navbar {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 12em auto 0;
+    min-height: 240px;
+    object-fit: cover;
+    width: 90vw;
+  }
+  .overlay {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 8.5em 0 8%;
+    min-height: 80vh;
+    padding: 0 28px;
+    z-index: 1;
+    p,
+    label {
+      background-clip: text;
+      font-family: "Radiance";
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      -webkit-text-fill-color: transparent;
+    }
+    app-gradient-button {
+      margin-top: 3%;
+    }
+    .top-text {
+      background-image: linear-gradient(to top, #ffffff, #f6f6f6),
+        linear-gradient(to bottom, #fefefe, #fefefe);
+      font-size: 1.5vw;
+    }
+    .title {
+      background-image: linear-gradient(to top, #ffffff, #f6f6f6),
+        linear-gradient(to bottom, #fefefe, #fefefe);
+      font-size: 3.5vw;
+      margin-top: auto;
+      .nitro {
+        background-image: linear-gradient(to top, #ff8700, #ff2300),
+          linear-gradient(to bottom, #fefefe, #fefefe);
+      }
+    }
+    .subtitle {
+      background-image: linear-gradient(to top, #ffffff, #f6f6f6),
+        linear-gradient(to bottom, #fefefe, #fefefe);
+      font-size: 1.8vw;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .image {
+      margin-top: 15em;
+    }
+    .overlay {
+      min-height: 70vh;
+      .top-text {
+        font-size: 2vh;
+      }
+      .title {
+        font-size: 3.5vh;
+      }
+      .subtitle {
+        font-size: 2vh;
+      }
+    }
+  }
+}

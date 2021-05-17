@@ -1,0 +1,20 @@
+<div
+  class="app-input"
+  [class.focused]="isFocused$ | async"
+  [class.disabled]="isDisabled$ | async"
+  [class.readonly]="readonly"
+>
+  <div *ngIf="!!title" class="title">
+    {{ title }}
+  </div>
+  <input
+    [type]="type"
+    [placeholder]="placeholder"
+    [value]="value$ | async"
+    [disabled]="isDisabled$ | async"
+    [readOnly]="readonly"
+    (focus)="handleFocus()"
+    (blur)="handleBlur()"
+    (input)="handleChange($event.target.value)"
+  />
+</div>

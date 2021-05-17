@@ -1,0 +1,90 @@
+.multi-step-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  app-input {
+    --input-width: 31vw;
+  }
+  .title {
+    color: #fefefe;
+    font-family: "Radiance";
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-left: 31.5vw;
+    margin-right: auto;
+  }
+  .one-to-three-row {
+    display: flex;
+    :first-child {
+      --input-width: 5vw;
+      margin-right: 3vw;
+    }
+    :nth-child(2) {
+      --input-width: 21vw;
+    }
+  }
+  .half-half-row {
+    display: flex;
+    :first-child {
+      --input-width: 14vw;
+      margin-right: 1vw;
+    }
+    :nth-child(2) {
+      --input-width: 14vw;
+    }
+  }
+  .stepper {
+    display: flex;
+    font-family: "Radiance";
+    font-size: 1.3vw;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 3%;
+    &__number {
+      margin: 0 4vw;
+    }
+    &__navegation {
+      cursor: pointer;
+    }
+  }
+  app-gradient-button {
+    margin-top: 2%;
+  }
+  @media only screen and (max-width: 768px) {
+    app-input {
+      --input-width: 40vh;
+    }
+    .title {
+      font-size: 3vh;
+      padding-left: 13vh;
+    }
+    .one-to-three-row {
+      display: flex;
+      :first-child {
+        --input-width: 7vh;
+        margin-right: 3vh;
+      }
+      :nth-child(2) {
+        --input-width: 25vh;
+      }
+    }
+    .half-half-row {
+      display: flex;
+      :first-child {
+        --input-width: 17vh;
+        margin-right: 1vh;
+      }
+      :nth-child(2) {
+        --input-width: 17vh;
+      }
+    }
+    .stepper {
+      font-size: 2vh;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .title {
+      padding-left: 1.8vh;
+    }
+  }
+}

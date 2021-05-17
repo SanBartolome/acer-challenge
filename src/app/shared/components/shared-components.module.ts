@@ -5,15 +5,18 @@ import { DeviceFeatureComponent } from './device-feature/device-feature.componen
 import { GradientButtonComponent } from './gradient-button/gradient-button.component';
 import { SilverGradientButtonComponent } from './silver-gradient-button/silver-gradient-button.component';
 import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.component';
+import { InputComponent } from './input/input.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   exports: [
     BrandsComponent,
     DeviceFeatureComponent,
     GradientButtonComponent,
     SilverGradientButtonComponent,
     HamburguerMenuComponent,
+    InputComponent,
   ],
   declarations: [
     BrandsComponent,
@@ -21,6 +24,7 @@ import { HamburguerMenuComponent } from './hamburguer-menu/hamburguer-menu.compo
     GradientButtonComponent,
     SilverGradientButtonComponent,
     HamburguerMenuComponent,
+    InputComponent,
   ],
 })
 export class AppSharedComponentsModule {}

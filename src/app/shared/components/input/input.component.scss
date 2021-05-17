@@ -1,0 +1,65 @@
+:host {
+  --input-color: white;
+  --font-size: 12px;
+  --input-padding: 15px;
+  --input-width: 100%;
+  --invalid-color: red;
+  --title-color: white;
+  --title-focus-color: white;
+  --title-font-size: 14px;
+  --transition: all 0.1s ease-in-out;
+  &.ng-invalid.ng-touched {
+    .app-input:not(.disabled) {
+      .title {
+        color: var(--invalid-color);
+      }
+      input {
+        border-color: var(--invalid-color);
+        ::placeholder {
+          color: var(--invalid-color);
+        }
+      }
+    }
+  }
+}
+
+.app-input {
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: var(--input-color);
+    font-size: var(--font-size);
+    outline: none;
+    padding: var(--input-padding);
+    transition: var(--transition);
+    width: var(--input-width);
+    ::placeholder {
+      transition: var(--transition);
+      color: var(--placeholder-color);
+      opacity: 0.9;
+    }
+  }
+  .title {
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    margin-top: 6px;
+    transition: var(--transition);
+  }
+
+  &.focused {
+    .title {
+      color: var(--subtext-focus-color);
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  &.readonly {
+    pointer-events: none;
+  }
+}
