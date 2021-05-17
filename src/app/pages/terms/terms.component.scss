@@ -1,0 +1,25 @@
+.terms {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Radiance";
+  line-height: 2;
+  padding: 5% 20%;
+  text-transform: uppercase;
+  p {
+    font-size: 0.7em;
+    margin: 0 0 2%;
+    text-align: justify;
+  }
+  h1 {
+    font-size: 1.2em;
+    margin: 3% 0;
+  }
+  app-gradient-button {
+    --background: transparent;
+    --text-background: linear-gradient(to top, #aaaaaa, #000000);
+    align-self: center;
+    margin-bottom: 5%;
+  }
+}

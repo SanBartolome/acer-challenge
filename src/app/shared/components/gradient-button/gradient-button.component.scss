@@ -1,5 +1,11 @@
+:host {
+  --background: rgba(0, 0, 0, 0.5);
+  --text-background: linear-gradient(to top, #ffffff, #aaaaaa),
+    linear-gradient(to bottom, #fefefe, #fefefe);
+}
+
 .module {
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--background);
   cursor: pointer;
   max-width: 235px;
   min-width: 205px;
@@ -21,8 +27,7 @@
   stroke-width: 4px;
 }
 .module-text {
-  background-image: linear-gradient(to top, #ffffff, #aaaaaa),
-    linear-gradient(to bottom, #fefefe, #fefefe);
+  background-image: var(--text-background);
   background-clip: text;
   font-family: "Teko";
   font-size: 4vh;

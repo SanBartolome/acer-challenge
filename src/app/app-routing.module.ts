@@ -13,9 +13,14 @@ const routes: Routes = [
       import('./pages/live/live.module').then((m) => m.LiveModule),
   },
   {
-    path: 'legal',
+    path: 'reglamento',
     loadChildren: () =>
       import('./pages/legal/legal.module').then((m) => m.LegalModule),
+  },
+  {
+    path: 'terminos',
+    loadChildren: () =>
+      import('./pages/terms/terms.module').then((m) => m.TermsModule),
   },
   {
     path: '',
