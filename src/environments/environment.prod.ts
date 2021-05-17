@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendUrl: 'https://git.heroku.com/ace-challenger-mailer.git',
+  backendUrl: 'https://ace-challenger-mailer.herokuapp.com',
 };
