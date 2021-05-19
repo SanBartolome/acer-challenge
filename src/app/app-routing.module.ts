@@ -23,7 +23,7 @@ const routes: Routes = [
       import('./pages/terms/terms.module').then((m) => m.TermsModule),
   },
   {
-    path: '',
+    path: '**',
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomeModule),
   },
