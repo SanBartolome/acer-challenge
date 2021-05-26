@@ -4,13 +4,14 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   selector: 'app-second-section',
   templateUrl: './second-section.component.html',
   styleUrls: ['./second-section.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SecondSectionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  openProductInShop(): void {
+    window.open('http://bit.ly/AMDNitro5');
   }
-
 }
