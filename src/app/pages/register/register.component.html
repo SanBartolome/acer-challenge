@@ -37,46 +37,53 @@
     <ng-container [ngSwitch]="step">
       <app-multi-step-form
         *ngSwitchCase="1"
-        title="CAPITÁN"
+        playerTitle="CAPITÁN"
         [stepNumber]="1"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="2"
-        title="MIEMBRO 2"
+        playerTitle="MIEMBRO 2"
         [stepNumber]="2"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="3"
-        title="MIEMBRO 3"
+        playerTitle="MIEMBRO 3"
         [stepNumber]="3"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="4"
-        title="MIEMBRO 4"
+        playerTitle="MIEMBRO 4"
         [stepNumber]="4"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="5"
-        title="MIEMBRO 5"
+        playerTitle="MIEMBRO 5"
         [stepNumber]="5"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
         (registerFinished)="sendEmail($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="6"
-        title="SUPLENTE 1"
+        playerTitle="SUPLENTE 1"
         [stepNumber]="6"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
         (registerFinished)="sendEmail($event)"
       ></app-multi-step-form>
       <app-multi-step-form
         *ngSwitchCase="7"
-        title="SUPLENTE 2"
+        playerTitle="SUPLENTE 2"
         [stepNumber]="7"
+        [disabled]="true"
         (updatedStepNumber)="updateStepNumber($event)"
         (registerFinished)="sendEmail($event)"
       ></app-multi-step-form>

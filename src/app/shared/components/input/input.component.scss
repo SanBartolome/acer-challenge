@@ -61,5 +61,12 @@
   }
   &.readonly {
     pointer-events: none;
+    input {
+      border-color: darkgray;
+      color: darkgray;
+    }
+    .title {
+      color: darkgray;
+    }
   }
 }

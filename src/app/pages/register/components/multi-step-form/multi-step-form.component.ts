@@ -16,8 +16,9 @@ import { RegisterService } from '../../services/register.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MultiStepFormComponent implements OnInit {
-  @Input() title: string;
+  @Input() playerTitle: string;
   @Input() stepNumber: number;
+  @Input() disabled = false;
   @Output() updatedStepNumber = new EventEmitter<number>();
   @Output() registerFinished = new EventEmitter<boolean>(false);
   formGroup: FormGroup;
@@ -28,7 +29,7 @@ export class MultiStepFormComponent implements OnInit {
     this.formGroup = this.registerService.registerTeam[this.stepNumber - 1];
   }
 
-  backStep() {
+  backStep(): void {
     this.updatedStepNumber.emit(this.stepNumber - 1);
   }
 

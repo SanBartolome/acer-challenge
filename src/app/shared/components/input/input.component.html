@@ -4,8 +4,8 @@
   [class.disabled]="isDisabled$ | async"
   [class.readonly]="readonly"
 >
-  <div *ngIf="!!title" class="title">
-    {{ title }}
+  <div *ngIf="!!upperText" class="title">
+    {{ upperText }}
   </div>
   <input
     [type]="type"

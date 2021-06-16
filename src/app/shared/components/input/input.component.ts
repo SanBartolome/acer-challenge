@@ -24,7 +24,7 @@ import { BehaviorSubject } from 'rxjs';
 export class InputComponent implements OnInit, ControlValueAccessor {
   @Input() type: string;
   @Input() placeholder = '';
-  @Input() title = '';
+  @Input() upperText = '';
   @Input() readonly = false;
   value$ = new BehaviorSubject(null);
   isDisabled$ = new BehaviorSubject(false);

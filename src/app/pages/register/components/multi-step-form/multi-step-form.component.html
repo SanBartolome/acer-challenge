@@ -1,58 +1,83 @@
 <div class="multi-step-form">
-  <label class="title">{{ title }}</label>
+  <label [class]="'title' + (disabled ? ' title--disabled' : '')">{{
+    playerTitle
+  }}</label>
   <form [formGroup]="formGroup">
     <app-input
       formControlName="fullName"
-      title="NOMBRES Y APELLIDOS"
+      upperText="NOMBRES Y APELLIDOS"
       type="text"
+      [readonly]="disabled"
     ></app-input>
     <div class="one-to-three-row">
-      <app-input formControlName="age" title="EDAD" type="tel"></app-input>
+      <app-input
+        formControlName="age"
+        upperText="EDAD"
+        type="tel"
+        [readonly]="disabled"
+      ></app-input>
       <app-input
         formControlName="birthdate"
-        title="FECHA DE NACIMIENTO"
+        upperText="FECHA DE NACIMIENTO"
         type="date"
+        [readonly]="disabled"
       ></app-input>
     </div>
     <app-input
       formControlName="steamUrl"
-      title="URL DE STEAM"
+      upperText="URL DE STEAM"
       type="text"
+      [readonly]="disabled"
     ></app-input>
     <div class="half-half-row">
       <app-input
         formControlName="steamId"
-        title="ID STEAM(DNI DOTERO)"
+        upperText="ID STEAM(DNI DOTERO)"
         type="text"
+        [readonly]="disabled"
       ></app-input>
       <app-input
         formControlName="discordId"
-        title="ID DE DISCORD"
+        upperText="ID DE DISCORD"
         type="text"
+        [readonly]="disabled"
       ></app-input>
     </div>
     <app-input
       formControlName="email"
-      title="CORREO ELECTRÓNICO"
+      upperText="CORREO ELECTRÓNICO"
       type="email"
+      [readonly]="disabled"
     ></app-input>
     <app-input
       formControlName="phone"
-      title="NÚMERO DE CONTACTO(#MÓVIL)"
+      upperText="NÚMERO DE CONTACTO(#MÓVIL)"
       type="tel"
+      [readonly]="disabled"
     ></app-input>
   </form>
   <div class="stepper">
     <label
       *ngIf="stepNumber !== 1"
-      class="stepper__navegation"
+      [class]="
+        'stepper__navegation' +
+        (disabled ? ' stepper__navegation--disabled' : '')
+      "
       (click)="backStep()"
       >{{ "< ANTERIOR PLAYER" }}</label
     >
-    <label class="stepper__number">{{ stepNumber }}/7</label>
+    <label
+      [class]="
+        'stepper__number' + (disabled ? ' stepper__number--disabled' : '')
+      "
+      >{{ stepNumber }}/7</label
+    >
     <label
       *ngIf="stepNumber !== 7"
-      class="stepper__navegation"
+      [class]="
+        'stepper__navegation' +
+        (disabled ? ' stepper__navegation--disabled' : '')
+      "
       (click)="nextStep()"
       >{{ "SIGUIENTE PLAYER >" }}</label
     >
@@ -60,6 +85,7 @@
   <app-gradient-button
     *ngIf="stepNumber >= 5"
     text="INSCRIBIRSE"
+    [disabled]="disabled"
     (click)="register()"
   ></app-gradient-button>
 </div>

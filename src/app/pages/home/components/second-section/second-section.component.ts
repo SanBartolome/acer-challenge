@@ -12,6 +12,6 @@ export class SecondSectionComponent implements OnInit {
   ngOnInit(): void {}
 
   openProductInShop(): void {
-    window.open('http://bit.ly/AMDNitro5');
+    window.open('http://bit.ly/Acerchallenge_peru');
   }
 }

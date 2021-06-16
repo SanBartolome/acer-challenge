@@ -12,6 +12,9 @@
     font-weight: bold;
     padding-left: 31.5vw;
     margin-right: auto;
+    &--disabled {
+      color: darkgray;
+    }
   }
   .one-to-three-row {
     display: flex;
@@ -42,9 +45,16 @@
     margin-top: 3%;
     &__number {
       margin: 0 4vw;
+      &--disabled {
+        color: darkgray;
+      }
     }
     &__navegation {
       cursor: pointer;
+      &--disabled {
+        color: darkgray;
+        pointer-events: none;
+      }
     }
   }
   app-gradient-button {
