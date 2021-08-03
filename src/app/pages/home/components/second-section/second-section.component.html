@@ -1,7 +1,7 @@
 <div class="second-section">
   <img class="image" src="/assets/media/laptops.png" />
   <div class="overlay">
-    <div class="content">
+    <div class="content" [@scrollAnimation]="state">
       <img
         class="logo-nitro"
         src="/assets/media/logo-nitro-5.png"
@@ -12,7 +12,7 @@
         (click)="openProductInShop()"
       ></app-gradient-button>
     </div>
-    <div class="bottom">
+    <div class="bottom" [@scrollAnimation]="state">
       <div class="features">
         <app-device-feature
           imageSrc="/assets/icons/ram-icon.png"
