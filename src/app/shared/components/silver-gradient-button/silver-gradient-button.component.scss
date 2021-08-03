@@ -1,11 +1,18 @@
+:host {
+  --font-size: 3.5vh;
+  --font-weight: bold;
+  --max-width: 235px;
+  --vertical-padding: 3px;
+}
+
 .module {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  max-width: 235px;
+  max-width: var(--max-width);
   min-width: 205px;
   position: relative;
   color: white;
-  padding: 3px 0;
+  padding: var(--vertical-padding) 0;
   text-align: center;
   width: 20vw;
 }
@@ -25,8 +32,8 @@
     linear-gradient(to bottom, #fefefe, #fefefe);
   background-clip: text;
   font-family: "Radiance";
-  font-size: 3.5vh;
-  font-weight: bold;
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
   -webkit-text-fill-color: transparent;
 }
 #silvergrad stop:nth-child(1) {

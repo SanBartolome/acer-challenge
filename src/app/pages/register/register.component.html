@@ -1,92 +1,35 @@
 <div class="register">
   <app-navbar></app-navbar>
   <div class="body">
-    <ng-container *ngIf="isLoading$ | async; else contentShow">
-      <div clas="title"><p>Cargando...</p></div>
-    </ng-container>
+    <div class="description">
+      <p class="title">
+        LA INSCRIPCIÓN SE LLEVARÁ A TRAVÉS DE LA FAMOSA PLATAFORMA FIRSTBLOOD
+      </p>
+      <p class="text">
+        TODOS LOS EQUIPOS TENDRÁN UN CAPITÁN, EL CUAL SIEMPRE ESTARÁ EN
+        CONSTANTE COMUNICACÓN CON EL STAFF Y ORGANIZACIÓN DEL TORNEO.
+      </p>
+      <p class="text">
+        DEBERÁ INGRESAR A DISCORD
+        <a href="https://discord.com/invite/jKaZyc3W8V"
+          >https://discord.com/invite/jKaZyc3W8V</a
+        >
+        Y SOLICITAR EL "ROL" CON EL NOMBRE DE TU EQUIPO
+      </p>
+    </div>
+    <app-silver-gradient-button
+      text="¡INSCRÍBETE AQUÍ!"
+    ></app-silver-gradient-button>
+    <div class="tutorial">
+      <p class="title">¿DUDAS SOBRE LA INSCRIPCIÓN?</p>
+      <p class="text">
+        TE AYUDAMOS A QUE TE INSCRIBAS CORRECTAMENTE Y PUEDAS PARTICIPAR SIN
+        PROBLEMA
+      </p>
+    </div>
+    <app-silver-gradient-button
+      text="IR AL TUTORIAL"
+    ></app-silver-gradient-button>
   </div>
   <app-footer></app-footer>
 </div>
-<ng-template #contentShow>
-  <ng-container *ngIf="isFinished$ | async; else formShow">
-    <div class="title">
-      <p>
-        HEMOS RECIBIDO CORRECTAMENTE SU INFORMACIÓN, POR FAVOR CUALQUIER DUDA
-        PONERSE EN CONTACTO A TRAVÉS DE DISCORD.
-      </p>
-    </div>
-    <div class="successful-message">
-      <img class="image" src="/assets/icons/check.png" />
-      <h1>REGISTRO COMPLETO CORRECTAMENTE</h1>
-      <p>¡BIENVENIDO AL #ACERCHALLENGEDOTAWARS!</p>
-    </div>
-  </ng-container>
-</ng-template>
-<ng-template #formShow>
-  <div class="title">
-    <p>
-      LLENA CORRECTAMENTE LOS ESPACIOS PARA CADA JUGADOR (MÁXIMO DOS SUPLENTES
-      POR EQUIPO A REGISTRAR)
-    </p>
-    <p>
-      TODOS LOS EQUIPOS TENDRÁN UN CAPITÁN, EL CUAL SIEMPRE ESTARÁ EN CONSTANTE
-      COMUNICACÓN CON EL STAFF Y ORGANIZACIÓN DEL TORNEO.
-    </p>
-  </div>
-  <ng-container *ngIf="stepNumber$ | async as step">
-    <ng-container [ngSwitch]="step">
-      <app-multi-step-form
-        *ngSwitchCase="1"
-        playerTitle="CAPITÁN"
-        [stepNumber]="1"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="2"
-        playerTitle="MIEMBRO 2"
-        [stepNumber]="2"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="3"
-        playerTitle="MIEMBRO 3"
-        [stepNumber]="3"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="4"
-        playerTitle="MIEMBRO 4"
-        [stepNumber]="4"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="5"
-        playerTitle="MIEMBRO 5"
-        [stepNumber]="5"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-        (registerFinished)="sendEmail($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="6"
-        playerTitle="SUPLENTE 1"
-        [stepNumber]="6"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-        (registerFinished)="sendEmail($event)"
-      ></app-multi-step-form>
-      <app-multi-step-form
-        *ngSwitchCase="7"
-        playerTitle="SUPLENTE 2"
-        [stepNumber]="7"
-        [disabled]="true"
-        (updatedStepNumber)="updateStepNumber($event)"
-        (registerFinished)="sendEmail($event)"
-      ></app-multi-step-form>
-    </ng-container>
-  </ng-container>
-</ng-template>

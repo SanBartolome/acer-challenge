@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { MultiStepFormComponent } from './multi-step-form/multi-step-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppSharedModule } from 'src/app/shared/shared.module';
-import { RegisterService } from '../services/register.service';
 
 @NgModule({
   declarations: [MultiStepFormComponent],

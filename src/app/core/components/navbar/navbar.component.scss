@@ -1,7 +1,7 @@
 $animate: all 0.05s ease-in-out;
 
 .navbar {
-  padding: 2.3em 28px 1.2em;
+  padding: 2.3em 100px 1.7em;
   &--collapsed {
     display: none;
   }
@@ -13,7 +13,7 @@ $animate: all 0.05s ease-in-out;
     padding: 0;
   }
   @media only screen and (max-width: 992px) {
-    padding-top: 1.3em;
+    padding: 1.3em 40px;
     &--expanded {
       display: none;
     }
@@ -76,7 +76,7 @@ $animate: all 0.05s ease-in-out;
     display: flex;
   }
   .hover {
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: bold;
     padding: 0;
     position: relative;

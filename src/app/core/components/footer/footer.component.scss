@@ -4,6 +4,7 @@
   flex-direction: column;
   font-size: 1.4em;
   padding: 28px;
+  position: relative;
   text-align: center;
   a {
     color: white;
@@ -33,6 +34,18 @@
     margin-bottom: 41px;
     &__item {
       margin: 0 10px;
+    }
+  }
+  .developer {
+    align-items: center;
+    display: flex;
+    margin-top: 3em;
+    &__label {
+      font-size: 0.7em;
+    }
+    &__image {
+      height: fit-content;
+      margin-left: 15px;
     }
   }
 }

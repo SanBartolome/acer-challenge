@@ -13,49 +13,50 @@
     width: 100%;
   }
   .body {
+    align-items: center;
     color: #fefefe;
+    display: flex;
+    flex-direction: column;
     font-family: "Radiance";
     min-height: 80vh;
     margin: 8.5em 0 auto;
     padding: 0 28px;
-    .title {
+    .description {
       margin-bottom: 5%;
-      p {
-        font-weight: bold;
-        font-size: 1vw;
-        margin: 0;
-        text-align: center;
-      }
     }
-    .successful-message {
-      margin-top: 20vh;
+    .tutorial {
+      margin-top: 8%;
+      margin-bottom: 2%;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.4vw;
+      margin: 0 0 1vh;
       text-align: center;
-      img {
-        height: 13vh;
-      }
-      h1 {
-        font-weight: bold;
-        font-size: 4vw;
-        margin-bottom: 0;
-      }
-      p {
-        font-weight: bold;
-        font-size: 2vw;
-        margin: 0;
-      }
+    }
+    .text {
+      font-weight: bold;
+      font-size: 1vw;
+      margin: 0 0 1vh;
+      text-align: center;
+    }
+    a {
+      color: #fefefe;
+      text-decoration: none;
+    }
+    app-silver-gradient-button {
+      --font-size: 2.5vh;
+      --font-weight: normal;
+      --max-width: 260px;
+      --vertical-padding: 10px;
     }
     @media only screen and (max-width: 768px) {
       min-height: 70vh;
-      .title {
-        p {
-          font-size: 2vh;
+      .description {
+        &__title {
+          font-size: 3vh;
         }
-      }
-      .successful-message {
-        h1 {
-          font-size: 4vh;
-        }
-        p {
+        &__text {
           font-size: 2vh;
         }
       }
