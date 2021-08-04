@@ -42,6 +42,12 @@
     }
     app-gradient-button {
       margin-top: 3%;
+      &:hover {
+        margin-top: 2.5%;
+        --font-size: 5vh;
+        --max-width: 280px;
+        --padding: 10px 0 7px;
+      }
     }
     .top-text {
       background-image: linear-gradient(to top, #ffffff, #f6f6f6),
@@ -93,6 +99,9 @@
   @media only screen and (max-width: 1200px) {
     .overlay {
       min-height: 90vw;
+      app-gradient-button:hover {
+        --width: 25vw;
+      }
     }
   }
   @media only screen and (max-width: 768px) {

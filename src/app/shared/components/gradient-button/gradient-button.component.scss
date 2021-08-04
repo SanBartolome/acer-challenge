@@ -1,19 +1,23 @@
 :host {
   --background: rgba(0, 0, 0, 0.5);
+  --font-size: 4vh;
+  --max-width: 235px;
   --text-background: linear-gradient(to top, #ffffff, #aaaaaa),
     linear-gradient(to bottom, #fefefe, #fefefe);
+  --padding: 8px 0 3px;
+  --width: 20vw;
 }
 
 .module {
   background: var(--background);
   cursor: pointer;
-  max-width: 235px;
+  max-width: var(--max-width);
   min-width: 205px;
   position: relative;
   color: white;
-  padding: 8px 0 3px;
+  padding: var(--padding);
   text-align: center;
-  width: 20vw;
+  width: var(--width);
   &--disabled {
     pointer-events: none;
   }
@@ -33,7 +37,7 @@
   background-image: var(--text-background);
   background-clip: text;
   font-family: "Teko";
-  font-size: 4vh;
+  font-size: var(--font-size);
   font-weight: 300;
   -webkit-text-fill-color: transparent;
 }

@@ -24,9 +24,20 @@
   app-silver-gradient-button {
     position: absolute;
     top: 43%;
+    &:hover {
+      top: 42%;
+      --font-size: 5vh;
+      --max-width: 280px;
+      --vertical-padding: 7px;
+    }
   }
   app-footer {
     margin-top: auto;
+  }
+  @media only screen and (max-width: 1218px) {
+    app-silver-gradient-button:hover {
+      --width: 25vw;
+    }
   }
   @media only screen and (max-width: 600px) {
     .title {
