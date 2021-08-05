@@ -2,8 +2,8 @@
   <video autoplay muted loop id="video" class="video">
     <source src="/assets/media/video.mp4" type="video/mp4" />
   </video>
-  <div class="overlay">
-    <app-navbar></app-navbar>
+  <div class="overlay" (scroll)="onWindowScroll($event)">
+    <app-navbar class="animated fadeInDown" id="navbar"></app-navbar>
     <div class="content">
       <img class="logo" src="/assets/media/logo.png" />
       <div class="register-section">
