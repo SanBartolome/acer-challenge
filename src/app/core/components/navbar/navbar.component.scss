@@ -63,7 +63,7 @@ $animate: all 0.05s ease-in-out;
 }
 
 .live-point {
-  background-image: linear-gradient(to top, #f61e00, #f8a200);
+  background-image: -webkit-linear-gradient(#f8a200, #f61e00);
   border-radius: 50%;
   height: 12px;
   margin-right: 6px;

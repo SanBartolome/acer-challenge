@@ -13,9 +13,8 @@
     &:hover {
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-blend-mode: multiply;
-      background-image: linear-gradient(to top, #ff8700, #ff2300),
-        linear-gradient(to bottom, #fefefe, #fefefe);
+      -webkit-background-clip: text;
+      background-image: -webkit-linear-gradient(#ff2300, #ff8700);
     }
   }
   app-brands {

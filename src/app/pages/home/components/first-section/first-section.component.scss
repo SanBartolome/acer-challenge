@@ -17,6 +17,7 @@
       position: absolute;
       top: 0;
       width: 100%;
+      z-index: 2;
     }
     display: flex;
     flex-direction: column;
@@ -47,22 +48,24 @@
         flex-direction: column;
         text-align: center;
         &__title {
-          background-image: linear-gradient(to top, #ffffff, #aaaaaa),
-            linear-gradient(to bottom, #fefefe, #fefefe);
+          background-image: -webkit-linear-gradient(#aaaaaa, #ffffff);
           background-clip: text;
+          color: #ffffff;
           font-family: "Radiance";
           font-size: 3.5em;
           font-weight: bold;
           margin: 0;
           -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
         }
         &__description {
-          background-image: linear-gradient(to top, #ffffff, #aaaaaa),
-            linear-gradient(to bottom, #fefefe, #fefefe);
+          background-image: -webkit-linear-gradient(#aaaaaa, #ffffff);
           background-clip: text;
+          color: #ffffff;
           font-family: "Radiance";
           font-size: 1.5em;
           -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
         }
         app-gradient-button {
           margin: 19px 0 30px;

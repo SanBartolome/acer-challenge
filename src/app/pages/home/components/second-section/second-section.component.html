@@ -1,5 +1,5 @@
 <div class="second-section">
-  <img class="image" src="/assets/media/laptops.png" />
+  <img class="image" src="/assets/media/laptops.png" [@slideInOut]="state" />
   <div class="overlay">
     <div class="content" [@scrollAnimation]="state">
       <img
@@ -29,11 +29,11 @@
           firstText="GEFORCE"
           secondText="GTX 1650"
         ></app-device-feature>
-        <app-device-feature
+        <!-- <app-device-feature
           imageSrc="/assets/icons/procesador-icon.png"
           firstText="RYZEN 5"
           secondText="SERIE 4000"
-        ></app-device-feature>
+        ></app-device-feature> -->
       </div>
       <img class="processors-logos" src="/assets/media/procesador-logo.png" />
     </div>

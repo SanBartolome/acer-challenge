@@ -34,12 +34,14 @@
   stroke-width: 4px;
 }
 .module-text {
-  background-image: var(--text-background);
+  background-image: -webkit-linear-gradient(#aaaaaa, #ffffff);
   background-clip: text;
+  color: #ffffff;
   font-family: "Teko";
   font-size: var(--font-size);
   font-weight: 300;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 #grad stop:nth-child(1) {
   stop-color: rgb(238, 27, 0);

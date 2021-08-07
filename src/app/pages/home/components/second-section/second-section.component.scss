@@ -51,6 +51,7 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: 0 34px;
+        padding: 10px 0;
         app-device-feature {
           margin: 10px;
         }
@@ -60,6 +61,7 @@
         max-height: 128px;
         object-fit: contain;
         margin: auto 0;
+        padding: 10px 0;
       }
     }
   }

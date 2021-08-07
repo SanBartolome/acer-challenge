@@ -11,6 +11,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
   }
   .body {
     align-items: center;
@@ -62,13 +63,11 @@
     }
     @media only screen and (max-width: 768px) {
       min-height: 70vh;
-      .description {
-        &__title {
-          font-size: 3vh;
-        }
-        &__text {
-          font-size: 2vh;
-        }
+      .title {
+        font-size: 3vh;
+      }
+      .text {
+        font-size: 2vh;
       }
     }
   }
