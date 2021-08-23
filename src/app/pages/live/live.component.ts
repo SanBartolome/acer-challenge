@@ -11,6 +11,6 @@ export class LiveComponent implements OnInit {
   ngOnInit(): void {}
 
   openLiveChannel(): void {
-    window.open('https://www.facebook.com/PaatrickCast');
+    window.open('https://www.facebook.com/YoloSergio');
   }
 }
