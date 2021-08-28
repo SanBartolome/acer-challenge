@@ -15,4 +15,8 @@ export class RegisterComponent implements OnInit {
       'https://app.firstblood.io/dota/tournaments/details/9570/overview'
     );
   }
+
+  openTutorial(): void {
+    window.open('https://youtu.be/MBUd15S0Yok');
+  }
 }
