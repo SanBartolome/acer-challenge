@@ -7,35 +7,63 @@
         src="/assets/media/logo-nitro-5.png"
         alt="Nitro 5"
       />
-      <app-gradient-button
-        text="VER PRODUCTO"
-        (click)="openProductInShop()"
-      ></app-gradient-button>
     </div>
     <div class="bottom" [@scrollAnimation]="state">
-      <div class="features">
-        <app-device-feature
-          imageSrc="/assets/icons/ram-icon.png"
-          firstText="16GB"
-          secondText="DDR4"
-        ></app-device-feature>
-        <app-device-feature
-          imageSrc="/assets/icons/ssd-icon.png"
-          firstText="512GB"
-          secondText="SSD"
-        ></app-device-feature>
-        <app-device-feature
-          imageSrc="/assets/icons/tarjetavideo-icon.png"
-          firstText="GEFORCE"
-          secondText="GTX 1650"
-        ></app-device-feature>
-        <!-- <app-device-feature
-          imageSrc="/assets/icons/procesador-icon.png"
-          firstText="RYZEN 5"
-          secondText="SERIE 4000"
-        ></app-device-feature> -->
+      <div class="bottom__button-container">
+        <app-gradient-button
+          text="VER PRODUCTO"
+          (click)="openProductInShop()"
+        ></app-gradient-button>
       </div>
-      <img class="processors-logos" src="/assets/media/procesador-logo.png" />
+      <div class="specs">
+        <div class="features">
+          <app-device-feature
+            imageSrc="/assets/icons/ram-icon.png"
+            firstText="16GB"
+            secondText="DDR4"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/ssd-icon.png"
+            firstText="1TB"
+            secondText="HDD"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/tarjetavideo-icon.png"
+            firstText="GEFORCE"
+            secondText="GTX 1650"
+          ></app-device-feature>
+        </div>
+        <img class="processors-logos" src="/assets/media/procesador-logo.jpg" />
+      </div>
+      <div class="bottom__button-container">
+        <app-gradient-button
+          text="VER PRODUCTO"
+          (click)="openProductInShop2()"
+        ></app-gradient-button>
+      </div>
+      <div class="specs">
+        <div class="features">
+          <app-device-feature
+            imageSrc="/assets/icons/ram-icon.png"
+            firstText="8GB"
+            secondText="DDR4"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/ssd-icon.png"
+            firstText="256GB"
+            secondText="SSD"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/tarjetavideo-icon.png"
+            firstText="GEFORCE"
+            secondText="GTX 1650"
+          ></app-device-feature>
+        </div>
+        <img
+          class="processors-logos"
+          src="/assets/media/procesador-logo-2.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>

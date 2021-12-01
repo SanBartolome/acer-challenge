@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     top: 0;
-    margin: 5% auto auto;
+    margin: 3% auto auto;
     min-height: 225px;
     max-width: 1400px;
     object-fit: cover;
@@ -29,20 +29,27 @@
       display: flex;
       flex-direction: column;
       padding: 0 28px;
-      app-gradient-button {
-        margin: 1% 0 30%;
-        &:hover {
-          margin-bottom: 29%;
-          --font-size: 5vh;
-          --max-width: 280px;
-          --padding: 10px 0 7px;
-        }
-      }
       .logo-nitro {
         height: 10vh;
       }
     }
     .bottom {
+      margin-top: 32%;
+      .bottom__button-container {
+        display: flex;
+        justify-content: center;
+        app-gradient-button {
+          margin-bottom: 19px;
+          &:hover {
+            margin-bottom: 0;
+            --font-size: 5vh;
+            --max-width: 280px;
+            --padding: 10px 0 7px;
+          }
+        }
+      }
+    }
+    .specs {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -67,14 +74,13 @@
   }
   @media only screen and (max-width: 1218px) {
     .image {
-      margin-top: 14vh;
+      margin-top: 4vh;
     }
     .overlay {
-      .content {
+      .bottom {
+        margin-top: 38vh;
         app-gradient-button {
-          margin-bottom: 36vh;
           &:hover {
-            margin-bottom: 34vh;
             --width: 25vw;
           }
         }
@@ -83,13 +89,11 @@
   }
   @media only screen and (max-width: 768px) {
     .image {
-      margin-top: 40%;
+      margin-top: 30%;
     }
     .overlay {
-      .content {
-        app-gradient-button {
-          margin-bottom: 60%;
-        }
+      .bottom {
+        margin-top: 60%;
       }
     }
   }

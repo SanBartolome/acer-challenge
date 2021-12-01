@@ -120,6 +120,10 @@ export class SecondSectionComponent implements OnInit {
   ngOnInit(): void {}
 
   openProductInShop(): void {
-    window.open('https://bit.ly/Nitro5_AcerChallenge');
+    window.open('https://bit.ly/Nitro5_IntelCorei7');
+  }
+
+  openProductInShop2(): void {
+    window.open('https://bit.ly/AcerNitro5');
   }
 }

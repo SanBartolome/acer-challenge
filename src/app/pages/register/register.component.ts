@@ -11,9 +11,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   openRegister(): void {
-    window.open(
-      'https://app.firstblood.io/dota/tournaments/details/9570/overview'
-    );
+    // window.open(
+    //   'https://app.firstblood.io/dota/tournaments/details/9570/overview'
+    // );
   }
 
   openTutorial(): void {
