@@ -33,7 +33,16 @@
             secondText="GTX 1650"
           ></app-device-feature>
         </div>
-        <img class="processors-logos" src="/assets/media/procesador-logo.jpg" />
+        <img
+          class="processor-logo"
+          src="/assets/media/procesador-logo.jpg"
+          alt="intel i7"
+        />
+        <img
+          class="processor-extra"
+          src="/assets/media/144-icon.png"
+          alt="144 hz"
+        />
       </div>
       <div class="bottom__button-container">
         <app-gradient-button
@@ -60,8 +69,44 @@
           ></app-device-feature>
         </div>
         <img
-          class="processors-logos"
+          class="processor-logo"
           src="/assets/media/procesador-logo-2.jpg"
+          alt="intel i5"
+        />
+        <img
+          class="processor-extra"
+          src="/assets/media/144-icon.png"
+          alt="144 hz"
+        />
+      </div>
+      <div class="bottom__button-container">
+        <app-gradient-button
+          text="VER PRODUCTO"
+          (click)="openProductInShop3()"
+        ></app-gradient-button>
+      </div>
+      <div class="specs">
+        <div class="features">
+          <app-device-feature
+            imageSrc="/assets/icons/ram-icon.png"
+            firstText="8GB"
+            secondText="DDR4"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/ssd-icon.png"
+            firstText="256GB"
+            secondText="SSD"
+          ></app-device-feature>
+          <app-device-feature
+            imageSrc="/assets/icons/tarjetavideo-icon.png"
+            firstText="GEFORCE"
+            secondText="GTX 1650"
+          ></app-device-feature>
+        </div>
+        <img
+          class="processor-logo"
+          src="/assets/media/procesador-logo-2.jpg"
+          alt="intel i5"
         />
       </div>
     </div>

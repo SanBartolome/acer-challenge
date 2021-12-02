@@ -126,4 +126,8 @@ export class SecondSectionComponent implements OnInit {
   openProductInShop2(): void {
     window.open('https://bit.ly/AcerNitro5_i5');
   }
+
+  openProductInShop3(): void {
+    window.open('https://bit.ly/Nitro5_i5');
+  }
 }

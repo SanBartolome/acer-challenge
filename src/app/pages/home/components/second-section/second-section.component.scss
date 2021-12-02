@@ -63,11 +63,17 @@
           margin: 10px;
         }
       }
-      .processors-logos {
+      .processor-logo {
         height: 13vh;
         max-height: 128px;
         object-fit: contain;
         margin: auto 0;
+        padding: 10px 0;
+      }
+      .processor-extra {
+        height: 9vh;
+        object-fit: contain;
+        margin: auto 0 auto 34px;
         padding: 10px 0;
       }
     }
