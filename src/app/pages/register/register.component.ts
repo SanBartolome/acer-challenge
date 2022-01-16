@@ -11,12 +11,12 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   openRegister(): void {
-    window.open(
-      'https://app.firstblood.io/dota/tournaments/details/10933/overview'
-    );
+    // window.open(
+    //   'https://app.firstblood.io/dota/tournaments/details/10933/overview'
+    // );
   }
 
   openTutorial(): void {
-    window.open('https://youtu.be/MBUd15S0Yok');
+    // window.open('https://youtu.be/MBUd15S0Yok');
   }
 }

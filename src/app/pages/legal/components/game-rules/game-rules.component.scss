@@ -7,3 +7,30 @@ p {
   text-align: justify;
   text-transform: uppercase;
 }
+
+.full-gradient-button-container {
+  text-align: center;
+}
+
+.full-gradient-button {
+  background: linear-gradient(to top, rgb(238, 27, 0), rgb(250, 160, 0));
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10%;
+  max-width: 235px;
+  min-width: 205px;
+  padding: 8px 0 3px;
+  text-align: center;
+  width: 20vw;
+  &__text {
+    background-image: -webkit-linear-gradient(#eeeeee, #ffffff);
+    background-clip: text;
+    color: #ffffff;
+    font-family: "Teko";
+    font-size: 4vh;
+    font-weight: 300;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
