@@ -25,6 +25,8 @@
     "@scullyio/init": "^1.1.4",
     "@scullyio/ng-lib": "^1.0.0",
     "@scullyio/scully": "^1.0.0",
+    "ng2-pdf-viewer": "^7.0.2",
+    "ngx-extended-pdf-viewer": "^10.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

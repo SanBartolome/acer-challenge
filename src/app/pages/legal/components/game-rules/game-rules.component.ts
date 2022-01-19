@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-rules',
@@ -7,11 +8,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GameRulesComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   openGameRules(): void {
-    // window.open('https://bit.ly/Nitro5_IntelCorei7');
+    this.router.navigate(['/reglamento/reglamento-1vs1']);
   }
 }

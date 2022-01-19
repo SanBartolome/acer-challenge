@@ -2,7 +2,8 @@
   <app-navbar
     *ngIf="
       (currentRoute$ | async) === '/reglamento' ||
-      (currentRoute$ | async) === '/terminos'
+      (currentRoute$ | async) === '/terminos' ||
+      (currentRoute$ | async) === '/reglamento/reglamento-1vs1'
     "
   ></app-navbar>
   <ng-content></ng-content>
@@ -10,6 +11,7 @@
 <app-footer
   *ngIf="
     (currentRoute$ | async) === '/reglamento' ||
-    (currentRoute$ | async) === '/terminos'
+    (currentRoute$ | async) === '/terminos' ||
+    (currentRoute$ | async) === '/reglamento/reglamento-1vs1'
   "
 ></app-footer>
