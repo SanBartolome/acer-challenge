@@ -1,5 +1,5 @@
 export const environment = {
-  production: true,
+  production: false,
   backendUrl: 'https://acerchallenge.predatorleaguelatam.com/emails/',
-  saga: false,
+  saga: true,
 };
