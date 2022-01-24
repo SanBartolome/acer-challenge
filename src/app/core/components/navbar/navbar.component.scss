@@ -1,6 +1,11 @@
+:host {
+  --background: rgba(0, 0, 0, 1);
+}
+
 $animate: all 0.05s ease-in-out;
 
-.navbar {
+.acer.navbar {
+  background: var(--background);
   padding: 2.3em 100px 1.7em;
   &--collapsed {
     display: none;
@@ -60,43 +65,53 @@ $animate: all 0.05s ease-in-out;
       }
     }
   }
-}
-
-.live-point {
-  background-image: -webkit-linear-gradient(#f8a200, #f61e00);
-  border-radius: 50%;
-  height: 12px;
-  margin-right: 6px;
-  width: 12px;
-}
-
-.option {
-  &--flex {
-    align-items: center;
-    display: flex;
+  .live-point {
+    background-image: -webkit-linear-gradient(#f8a200, #f61e00);
+    border-radius: 50%;
+    height: 12px;
+    margin-right: 6px;
+    width: 12px;
   }
-  .hover {
-    font-size: 1.6em;
-    font-weight: bold;
-    padding: 0;
-    position: relative;
-    transition: $animate;
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0px;
-      height: 3px;
-      margin: 3px 0 0;
+
+  .option {
+    &--flex {
+      align-items: center;
+      display: flex;
+    }
+    .hover {
+      font-size: 1.6em;
+      font-weight: bold;
+      padding: 0;
+      position: relative;
       transition: $animate;
-      transition-duration: 0.75s;
-      opacity: 0;
-      background: linear-gradient(90deg, rgb(246, 25, 0), rgb(248, 163, 0));
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0px;
+        height: 3px;
+        margin: 3px 0 0;
+        transition: $animate;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(246, 25, 0), rgb(248, 163, 0));
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .hover {
+        &:before,
+        &:after {
+          width: 100%;
+          opacity: 1;
+        }
+      }
     }
   }
-  &:hover {
+
+  .active {
     cursor: pointer;
     .hover {
       &:before,
@@ -104,17 +119,6 @@ $animate: all 0.05s ease-in-out;
         width: 100%;
         opacity: 1;
       }
-    }
-  }
-}
-
-.active {
-  cursor: pointer;
-  .hover {
-    &:before,
-    &:after {
-      width: 100%;
-      opacity: 1;
     }
   }
 }

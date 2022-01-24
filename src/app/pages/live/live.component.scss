@@ -1,4 +1,4 @@
-.live {
+.acer.live {
   background-image: url("/assets/media/bg-en-vivo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,7 +6,7 @@
   flex-direction: column;
   position: relative;
   app-navbar {
-    background: rgba(0, 0, 0, 0.5);
+    --background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     width: 100%;
@@ -58,6 +58,7 @@
     .title {
       background-image: -webkit-linear-gradient(#ffffff, #f6f6f6);
       font-size: 3.5vw;
+      line-height: 1em;
       margin-top: auto;
       .nitro {
         background-image: -webkit-linear-gradient(#ff8700, #ff2300);

@@ -6,7 +6,7 @@
   --width: 20vw;
 }
 
-.module {
+.acer.module {
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   max-width: var(--max-width);
@@ -17,7 +17,7 @@
   text-align: center;
   width: var(--width);
 }
-.module-border {
+.acer.module-border {
   position: absolute;
   overflow: visible;
   left: 0;
@@ -28,13 +28,14 @@
   stroke: url(#silvergrad);
   stroke-width: 4px;
 }
-.module-text {
+.acer.module-text {
   background-image: linear-gradient(to top, #ffffff, #aaaaaa),
     linear-gradient(to bottom, #fefefe, #fefefe);
   background-clip: text;
   font-family: "Radiance";
   font-size: var(--font-size);
   font-weight: var(--font-weight);
+  line-height: 1em;
   -webkit-text-fill-color: transparent;
 }
 #silvergrad stop:nth-child(1) {

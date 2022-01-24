@@ -24,7 +24,7 @@ if (environment.saga) {
     ],
     () => {
       runApp();
-      track('Nonbre-del-landing');
+      track('Acer-challenge');
     }
   );
 } else {

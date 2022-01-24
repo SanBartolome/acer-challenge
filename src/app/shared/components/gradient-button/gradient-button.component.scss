@@ -8,7 +8,7 @@
   --width: 20vw;
 }
 
-.module {
+.acer.module {
   background: var(--background);
   cursor: pointer;
   max-width: var(--max-width);
@@ -22,7 +22,7 @@
     pointer-events: none;
   }
 }
-.module-border {
+.acer.module-border {
   position: absolute;
   overflow: visible;
   left: 0;
@@ -33,13 +33,14 @@
   stroke: url(#grad);
   stroke-width: 4px;
 }
-.module-text {
+.acer.module-text {
   background-image: -webkit-linear-gradient(#aaaaaa, #ffffff);
   background-clip: text;
   color: #ffffff;
   font-family: "Teko";
   font-size: var(--font-size);
   font-weight: 300;
+  line-height: 1em;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
