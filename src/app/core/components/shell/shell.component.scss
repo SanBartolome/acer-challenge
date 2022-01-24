@@ -1,3 +1,8 @@
-app-navbar {
-  z-index: 2;
+.acer.shell {
+  app-navbar {
+    z-index: 2;
+  }
+}
+app-footer {
+  --background: rgba(0, 0, 0, 1);
 }

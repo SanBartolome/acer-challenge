@@ -1,13 +1,13 @@
-<div class="legal">
+<div class="acer legal">
   <app-legal-navbar (currentTab)="getCurrentTab($event)"></app-legal-navbar>
   <ng-container [ngSwitch]="currentTab">
-    <div *ngSwitchCase="0" class="container">
+    <div *ngSwitchCase="0" class="acer legal__item">
       <app-register-rules></app-register-rules>
     </div>
-    <div *ngSwitchCase="1" class="container">
+    <div *ngSwitchCase="1" class="acer legal__item">
       <app-game-rules></app-game-rules>
     </div>
-    <div *ngSwitchCase="2" class="container">
+    <div *ngSwitchCase="2" class="acer legal__item">
       <app-awards-and-schedule></app-awards-and-schedule>
     </div>
   </ng-container>
