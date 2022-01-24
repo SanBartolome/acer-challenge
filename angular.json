@@ -39,6 +39,27 @@
             "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
+            "saga": {
+              "index": "src/index.saga.html",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.saga.ts"
+                }
+              ]
+            },
+            "saga-prod": {
+              "index": {
+                "input": "src/index.saga.html",
+                "output": "index.html"
+              },
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.saga-prod.ts"
+                }
+              ]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -76,6 +97,9 @@
           "configurations": {
             "production": {
               "browserTarget": "acer-challenge:build:production"
+            },
+            "saga": {
+              "browserTarget": "acer-challenge:build:saga"
             }
           }
         },
@@ -132,5 +156,8 @@
       }
     }
   },
-  "defaultProject": "acer-challenge"
+  "defaultProject": "acer-challenge",
+  "cli": {
+    "analytics": false
+  }
 }

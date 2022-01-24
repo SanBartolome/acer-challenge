@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:saga": "ng serve --configuration=saga",
     "build": "ng build",
+    "build:saga": "ng build --configuration=production,saga-prod && npm run scully",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
