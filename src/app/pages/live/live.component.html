@@ -1,5 +1,5 @@
-<div class="acer live">
-  <app-navbar></app-navbar>
+<div class="acer live" (scroll)="onWindowScroll($event)">
+  <app-navbar class="animated fadeInDown" id="navbar"></app-navbar>
   <img class="image" src="/assets/media/laptops.png" />
   <div class="overlay">
     <p class="top-text">
