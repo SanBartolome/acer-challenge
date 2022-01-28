@@ -15,7 +15,7 @@
     min-height: 225px;
     max-width: 1400px;
     object-fit: cover;
-    width: 85vw;
+    width: 80vw;
   }
   .overlay {
     display: flex;
@@ -80,7 +80,7 @@
   }
   @media only screen and (max-width: 1218px) {
     .image {
-      margin-top: 4vh;
+      margin-top: 5%;
     }
     .overlay {
       .bottom {
@@ -93,9 +93,14 @@
       }
     }
   }
+  @media only screen and (max-width: 972px) {
+    .image {
+      margin-top: 12%;
+    }
+  }
   @media only screen and (max-width: 768px) {
     .image {
-      margin-top: 30%;
+      margin-top: 25%;
     }
     .overlay {
       .bottom {

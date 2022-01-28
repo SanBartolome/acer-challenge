@@ -18,7 +18,7 @@
     left: 0;
     right: 0;
     top: 0;
-    margin: 12em auto 0;
+    margin: 8em auto 0;
     min-height: 225px;
     max-width: 1400px;
     object-fit: cover;
@@ -91,11 +91,17 @@
     }
   }
   @media only screen and (max-width: 1700px) {
+    .image {
+      margin-top: 13em;
+    }
     .overlay {
       min-height: 80vw;
     }
   }
   @media only screen and (max-width: 1200px) {
+    .image {
+      margin-top: 13em;
+    }
     .overlay {
       min-height: 90vw;
       app-gradient-button:hover {
@@ -105,7 +111,7 @@
   }
   @media only screen and (max-width: 768px) {
     .image {
-      margin-top: 15em;
+      margin-top: 12.5em;
     }
     .overlay {
       min-height: 100vh;
