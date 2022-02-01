@@ -23,7 +23,7 @@
     }
   }
   app-brands {
-    margin: 28px 0 2em;
+    margin-bottom: 2em;
   }
   .horizontal-border {
     border-left: 2px solid white;
@@ -74,6 +74,15 @@
     }
     .navegation {
       flex-direction: column;
+    }
+    .hashtags {
+      margin-bottom: 20px;
+    }
+    .developer {
+      margin-top: 2em;
+    }
+    app-brands {
+      margin-bottom: 1em;
     }
   }
 }
