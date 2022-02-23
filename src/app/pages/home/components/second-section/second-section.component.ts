@@ -120,14 +120,14 @@ export class SecondSectionComponent implements OnInit {
   ngOnInit(): void {}
 
   openProductInShop(): void {
-    window.open('https://bit.ly/SagaF_Nitro5_CoreI5');
+    // window.open('https://bit.ly/SagaF_Nitro5_CoreI5');
   }
 
   openProductInShop2(): void {
-    window.open('https://bit.ly/SagaF_Nitro5_Corei7');
+    // window.open('https://bit.ly/SagaF_Nitro5_Corei7');
   }
 
   openProductInShop3(): void {
-    window.open('https://bit.ly/SagaF_Nitro5_Corei5');
+    // window.open('https://bit.ly/SagaF_Nitro5_i7');
   }
 }

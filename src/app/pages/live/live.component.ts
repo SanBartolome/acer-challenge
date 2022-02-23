@@ -42,6 +42,6 @@ export class LiveComponent implements OnInit {
   }
 
   openLiveChannel(): void {
-    window.open('https://www.facebook.com/Solicorn1506');
+    window.open('https://trovo.live/leostyledota');
   }
 }
