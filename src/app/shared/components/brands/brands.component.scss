@@ -6,16 +6,10 @@
   .image {
     height: 3.7vh;
     margin: 5px 3vw;
-    &--oeschle {
-      height: 4vh;
-    }
   }
   @media only screen and (max-width: 600px) {
     .image {
       height: 2.7vh;
-      &--oeschle {
-        height: 3vh;
-      }
     }
   }
 }
