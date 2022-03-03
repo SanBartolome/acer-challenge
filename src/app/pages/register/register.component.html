@@ -1,11 +1,10 @@
 <div class="acer register">
-  <app-navbar></app-navbar>
-  <div class="body">
-    <div class="description">
-      <p class="title">
-        LA INSCRIPCIÓN SE LLEVARÁ A TRAVÉS DE LA PLATAFORMA DE ########
-      </p>
-      <!-- <p class="text">
+  <div class="overlay">
+    <app-navbar></app-navbar>
+    <div class="acer register__body">
+      <div class="description">
+        <p class="title">LA INSCRIPCIÓN SE LLEVARÁ A TRAVÉS DE GOOGLE FORM</p>
+        <!-- <p class="text">
         TODOS LOS JUGADORES DEBERÁN UNIRSE AL DISCORD OFICIAL DE LA COMPETENCIA,
         DONDE EL STAFF HARÁ LAS COMUNICACIONES RESPECTIVAS Y NECESARIAS SOBRE LA
         COMPETENCIA.
@@ -16,11 +15,12 @@
           >https://discord.com/invite/jKaZyc3W8V</a
         >
       </p> -->
+      </div>
+      <app-silver-gradient-button
+        text="¡INSCRÍBETE AQUÍ!"
+        (click)="openRegister()"
+      ></app-silver-gradient-button>
     </div>
-    <app-silver-gradient-button
-      text="¡INSCRÍBETE AQUÍ!"
-      (click)="openRegister()"
-    ></app-silver-gradient-button>
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
 </div>

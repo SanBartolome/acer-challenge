@@ -1,26 +1,28 @@
 <div class="acer live" (scroll)="onWindowScroll($event)">
-  <app-navbar class="animated fadeInDown" id="navbar"></app-navbar>
-  <img class="image" src="/assets/media/laptops.png" />
   <div class="overlay">
-    <p class="top-text">
-      VIVE LA EMOCIÓN Y PARTICIPA POR GRANDES PREMIOS DESDE CASA.
-    </p>
-    <app-gradient-button
-      text="VER TRANSMISIÓN"
-      (click)="openLiveChannel()"
-    ></app-gradient-button>
-    <p class="title">
-      ¡VIVE EL PODER DE CADA PARTIDA CON LA
-      <label class="nitro">NITRO 5</label>
-    </p>
-    <p class="subtitle">MUCHAS SORPRESAS EN EL STREAM</p>
-    <div class="steam">
-      <img class="steam__image" src="/assets/media/vbucks.png" alt="" />
-      <div class="steam__text">
-        <h6>25.000 PAVOS</h6>
-        <p>5 SORTEOS DE 5.000 PAVOS</p>
+    <app-navbar class="animated fadeInDown" id="navbar"></app-navbar>
+    <img class="image" src="/assets/media/laptops.png" />
+    <div class="acer live__body">
+      <p class="top-text">
+        VIVE LA EMOCIÓN Y PARTICIPA POR GRANDES PREMIOS DESDE CASA.
+      </p>
+      <app-gradient-button
+        text="VER TRANSMISIÓN"
+        (click)="openLiveChannel()"
+      ></app-gradient-button>
+      <p class="title">
+        ¡VIVE EL PODER DE CADA PARTIDA CON LA
+        <label class="nitro">NITRO 5</label>
+      </p>
+      <p class="subtitle">MUCHAS SORPRESAS EN EL STREAM</p>
+      <div class="gift">
+        <img class="gift__image" src="/assets/media/vbucks.png" alt="" />
+        <div class="gift__text">
+          <h6>25.000 PAVOS</h6>
+          <p>5 SORTEOS DE 5.000 PAVOS</p>
+        </div>
       </div>
     </div>
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
 </div>

@@ -11,9 +11,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {}
 
   openRegister(): void {
-    // window.open(
-    //   'https://battlefy.com/acer/acer-challenge-1vs1/61e6504b62270c359ecd0c3b/info'
-    // );
+    window.open(
+      'https://docs.google.com/forms/d/e/1FAIpQLSegLc1E4nl9PcgetkSySzz5mYHRJyMBVbfdBhhWAsIBedB_2Q/viewform'
+    );
   }
 
   openTutorial(): void {

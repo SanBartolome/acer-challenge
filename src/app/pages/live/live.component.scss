@@ -2,9 +2,12 @@
   background-image: url("/assets/media/bg-en-vivo.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  .overlay {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
   app-navbar {
     --background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -24,7 +27,7 @@
     object-fit: cover;
     width: 85vw;
   }
-  .overlay {
+  &__body {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -70,7 +73,7 @@
       background-image: -webkit-linear-gradient(#ffffff, #f6f6f6);
       font-size: 1.8vw;
     }
-    .steam {
+    .gift {
       align-items: center;
       justify-content: center;
       display: flex;
@@ -83,12 +86,12 @@
         h6 {
           background-image: linear-gradient(to top, #ffffff, #f6f6f6),
             linear-gradient(to bottom, #fefefe, #fefefe);
-          font-size: 2vw;
+          font-size: 4vw;
         }
         p {
           background-image: linear-gradient(to top, #ffffff, #f6f6f6),
             linear-gradient(to bottom, #fefefe, #fefefe);
-          font-size: 1vw;
+          font-size: 2vw;
           font-weight: normal;
         }
       }
@@ -115,7 +118,7 @@
   }
   @media only screen and (max-width: 768px) {
     .image {
-      margin-top: 20em;
+      margin-top: 16em;
     }
     .overlay {
       min-height: 90vh;
@@ -128,16 +131,16 @@
       .subtitle {
         font-size: 2vh;
       }
-      .steam {
+      .gift {
         &__image {
-          width: 80%;
+          width: 30vh;
         }
         &__text {
           h6 {
-            font-size: 3vh;
+            font-size: 6vh;
           }
           p {
-            font-size: 2vh;
+            font-size: 3vh;
           }
         }
       }

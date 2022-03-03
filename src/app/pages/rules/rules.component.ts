@@ -7,7 +7,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RulesComponent implements OnInit {
-  pdfSrc = '/assets/media/reglamento_1vs1.pdf';
+  pdfSrc = '/assets/media/reglamento.pdf';
 
   constructor() {}
 

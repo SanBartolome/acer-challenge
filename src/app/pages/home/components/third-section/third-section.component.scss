@@ -1,15 +1,19 @@
 .acer.third-section {
-  align-items: center;
   background-image: url("/assets/media/bg-3.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  min-height: 1000px;
-  padding: 40px 28px 0;
-  position: relative;
-  text-align: center;
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+    padding: 40px 28px 0;
+    position: relative;
+    text-align: center;
+  }
   .title {
     font-family: "Radiance";
     font-size: 3.5em;
