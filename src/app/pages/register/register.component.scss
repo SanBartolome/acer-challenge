@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     font-family: "Radiance";
-    min-height: 80vh;
+    min-height: 75vh;
     margin: 8.5em 0 auto;
     padding: 0 28px;
     .description {
@@ -48,22 +48,22 @@
       color: #fefefe;
       text-decoration: none;
     }
-    app-silver-gradient-button {
+    app-gradient-button {
       margin-top: 3%;
       --font-size: 2.5vh;
       --font-weight: normal;
       --max-width: 260px;
-      --vertical-padding: 10px;
+      --padding: 10px 0;
       &:hover {
-        margin-top: 4.1%;
+        margin-top: 2.5%;
         --font-size: 3vh;
         --font-weight: normal;
         --max-width: 280px;
-        --vertical-padding: 15px;
+        --padding: 15px 0;
       }
     }
     @media only screen and (max-width: 1218px) {
-      app-silver-gradient-button:hover {
+      app-gradient-button:hover {
         --width: 25vw;
       }
     }

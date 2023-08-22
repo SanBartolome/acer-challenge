@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
 
   openRegister(): void {
     window.open(
-      'https://docs.google.com/forms/d/e/1FAIpQLSegLc1E4nl9PcgetkSySzz5mYHRJyMBVbfdBhhWAsIBedB_2Q/viewform'
+      'https://battlefy.com/qwerstudios/valorant-acer-challenge-perú-2023/64e3c880d4c5f07dc8c26a5b/info'
     );
   }
 

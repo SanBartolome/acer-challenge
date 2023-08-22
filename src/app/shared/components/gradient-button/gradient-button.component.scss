@@ -1,15 +1,13 @@
 :host {
-  --background: rgba(0, 0, 0, 0.4);
   --font-size: 4vh;
+  --font-weight: 300;
   --max-width: 235px;
-  --text-background: linear-gradient(to top, #ffffff, #aaaaaa),
-    linear-gradient(to bottom, #fefefe, #fefefe);
   --padding: 8px 0 3px;
   --width: 20vw;
 }
 
 .acer.module {
-  background: var(--background);
+  background: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   max-width: var(--max-width);
   min-width: 205px;
@@ -39,14 +37,14 @@
   color: #ffffff;
   font-family: "Teko";
   font-size: var(--font-size);
-  font-weight: 300;
+  font-weight: var(--font-weight);
   line-height: 1em;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 #grad stop:nth-child(1) {
-  stop-color: rgb(238, 27, 0);
+  stop-color: #dd0000;
 }
 #grad stop:nth-child(2) {
-  stop-color: rgb(250, 160, 0);
+  stop-color: #dd0000;
 }

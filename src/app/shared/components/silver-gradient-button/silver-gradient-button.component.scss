@@ -2,7 +2,7 @@
   --font-size: 3.5vh;
   --font-weight: bold;
   --max-width: 235px;
-  --vertical-padding: 3px;
+  --padding: 3px 0;
   --width: 20vw;
 }
 
@@ -13,9 +13,12 @@
   min-width: 205px;
   position: relative;
   color: white;
-  padding: var(--vertical-padding) 0;
+  padding: var(--padding);
   text-align: center;
   width: var(--width);
+  &--disabled {
+    pointer-events: none;
+  }
 }
 .acer.module-border {
   position: absolute;
@@ -37,6 +40,7 @@
   font-weight: var(--font-weight);
   line-height: 1em;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 #silvergrad stop:nth-child(1) {
   stop-color: #ffffff;

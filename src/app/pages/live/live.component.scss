@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     top: 0;
-    margin: 15em auto 0;
+    margin: 17em auto 0;
     min-height: 225px;
     max-width: 1400px;
     object-fit: cover;
@@ -66,7 +66,7 @@
       line-height: 1em;
       margin-top: auto;
       .nitro {
-        background-image: -webkit-linear-gradient(#ff8700, #ff2300);
+        background-color: #dd0000;
       }
     }
     .subtitle {
@@ -79,8 +79,9 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 5%;
+      margin-right: 10px;
       &__image {
-        width: 25vw;
+        width: 20vw;
       }
       &__text {
         h6 {
@@ -99,7 +100,7 @@
   }
   @media only screen and (max-width: 1700px) {
     .image {
-      margin-top: 15em;
+      margin-top: 16em;
     }
     .overlay {
       min-height: 80vw;
@@ -118,7 +119,7 @@
   }
   @media only screen and (max-width: 768px) {
     .image {
-      margin-top: 16em;
+      margin-top: 17em;
     }
     .overlay {
       min-height: 90vh;

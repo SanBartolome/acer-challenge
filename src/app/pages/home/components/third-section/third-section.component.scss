@@ -20,27 +20,29 @@
     font-weight: bold;
     margin: 0;
     line-height: 1em;
+    text-transform: uppercase;
   }
   .subtitle {
     font-family: "Radiance";
     font-size: 1.5em;
     margin: 2% 0 0;
+    text-transform: uppercase;
   }
-  app-silver-gradient-button {
+  app-gradient-button {
     position: absolute;
     top: 43%;
     &:hover {
       top: 42%;
       --font-size: 5vh;
       --max-width: 280px;
-      --vertical-padding: 7px;
+      --padding: 10px 0 7px;
     }
   }
   app-footer {
     margin-top: auto;
   }
   @media only screen and (max-width: 1218px) {
-    app-silver-gradient-button:hover {
+    app-gradient-button:hover {
       --width: 25vw;
     }
   }
@@ -51,7 +53,7 @@
     .subtitle {
       font-size: 4vw;
     }
-    app-silver-gradient-button {
+    app-gradient-button {
       top: 44%;
     }
   }

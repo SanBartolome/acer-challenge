@@ -11,7 +11,7 @@
     left: 0;
     right: 0;
     top: 0;
-    margin: 3% auto auto;
+    margin: 6% auto auto;
     min-height: 225px;
     max-width: 1400px;
     object-fit: cover;
@@ -81,7 +81,7 @@
   }
   @media only screen and (max-width: 1218px) {
     .image {
-      margin-top: 5%;
+      margin-top: 8%;
     }
     .overlay {
       .bottom {
@@ -96,7 +96,7 @@
   }
   @media only screen and (max-width: 972px) {
     .image {
-      margin-top: 12%;
+      margin-top: 15%;
     }
   }
   @media only screen and (max-width: 768px) {
